@@ -1,0 +1,13 @@
+services:
+  scraper:
+    build: .
+    # Mount host results directory so output JSON persists after container exits
+    volumes:
+      - ./results:/app/results
+    environment:
+      - DISPLAY= # Prevents X11 errors in headless mode
+    # Default: show help (safe for `docker compose up` without args)
+    command: [ "--help" ]
+    # Run-once CLI tool — do not restart on exit
+    restart: "no"
+    # Note: This is a standalone service, no dependencies needed

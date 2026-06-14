@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / OS settings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# User constraints: never push data or md files
+# Data files
+*.json
+*.JSON
+*.csv
+*.CSV
+*.xlsx
+*.XLSX
+*.xls
+*.XLS
+*.db
+*.DB
+*.sqlite3
+*.SQLITE3
+results/
+results.json
+
+# Markdown files
+*.md
+*.MD
+**/*.md
+**/*.MD
